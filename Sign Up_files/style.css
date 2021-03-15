@@ -1,0 +1,260 @@
+h1,p,h3,li{
+font-family:lucida console;
+line-height:1.6;
+}
+body{
+background-color:ghostwhite;
+margin:0;
+padding:0;
+}
+
+button{
+font-weight:bold;
+font-family:papyrus;
+letter-spacing:1px;
+background-color:ghostwhite;
+border:none;
+margin:5px;
+font-size:17px;
+box-shadow:2px black;
+}
+button:hover{
+color:ghostwhite;
+background-color:chocolate;
+cursor:pointer;
+}
+.button1{
+font-weight:bold;
+font-family:papyrus;
+letter-spacing:1px;
+background-color:black;
+color:yellow;
+border:1px solid ghostwhite;
+margin:5px;
+height:28px;
+font-size:14px;
+box-shadow:2px black;
+}
+.button1:hover{
+color:ghostwhite;
+background-color:black;
+}
+.button2{
+font-weight:bold;
+font-family:papyrus;
+letter-spacing:1px;
+background-color:red;
+color:black;
+border:none;
+margin:5px;
+height:28px;
+font-size:15px;
+box-shadow:2px black;
+}
+.button2:hover{
+color:ghostwhite;
+background-color:chocolate;
+}
+
+#Catebut1:not(.active),#Catebut2:not(.active),#Catebut3:not(.active){
+color:ghostwhite;
+font-weight:bold;
+font-family:papyrus;
+letter-spacing:1px;
+background-color:transparent;
+border:none;
+margin:5px;
+font-size:17px;
+box-shadow:2px black;
+}
+#Catebut1:hover,#Catebut2:hover,#Catebut3:hover{
+color:ghostwhite;
+background-color:chocolate;
+cursor:pointer;
+}
+
+a{
+text-decoration:none;
+}
+#im1:hover{
+background-color:ghostwhite;
+
+}
+
+.div1:hover{
+background-color:white;
+border-top:2px solid black;
+border-bottom:2px solid black;
+opacity:1;
+}
+#divcat:hover{
+background-color:white;
+border:2px solid black;
+opacity:1;
+}
+.div1{
+opacity:0.8;
+position:relative;
+}
+.div1_movie,.div1_tvseries,.div1_games{
+opacity:0.7;
+position:absolute;
+}
+.div1_movie{
+animation:slideshow 50s infinite;
+}
+@keyframes slideshow{
+0%{background-image:url(M3.jfif)}
+50%{background-image:url(M2.jfif)}
+100%{background-image:url(M1.jfif)}
+}
+
+.div1_tvseries{
+animation:slideshow1 50s infinite;
+}
+@keyframes slideshow1{
+0%{background-image:url(tvs3.jfif)}
+50%{background-image:url(tvs1.jfif)}
+100%{background-image:url(tvs2.jfif)}
+}
+
+.div1_games{
+animation:slideshow2 50s infinite;
+}
+@keyframes slideshow2{
+0%{background-image:url(G1.jfif)}
+50%{background-image:url(G2.jfif)}
+100%{background-image:url(G3.jfif)}
+}
+.active{
+color:ghostwhite;
+background-color:green;
+}
+
+.header{
+background-color:ghostwhite;
+opacity:0.7;
+}
+
+.header:hover{
+opacity:1;
+}
+
+.header_movies{
+opacity:0.7;
+animation:headerMovies 50s infinite;
+}
+@keyframes headerMovies{
+0%{background-image:url(M3.jfif)}
+50%{background-image:url(M1.jfif)}
+100%{background-image:url(M2.jfif)}
+}
+
+.header_movies:hover{
+opacity:1;
+}
+
+.header_TVseries{
+opacity:0.7;
+animation: headerTvseries 50s infinite;
+}
+@keyframes headerTvseries{
+0%{background-image:url(tvs3.jfif)}
+50%{background-image:url(tvs2.jfif)}
+100%{background-image:url(tvs1.jfif)}
+}
+.header_TVseries:hover{
+opacity:1;
+}
+
+.header_Games{
+opacity:0.7;
+animation:headerGames 50s infinite;
+}
+@keyframes headerGames{
+0%{background-image:url(G1.jfif)}
+50%{background-image:url(G2.jfif)}
+100%{background-image:url(G3.jfif)}
+}
+.header_Games:hover{
+opacity:1;
+}
+
+.footer{
+position:relative;
+background-color:lightblue;
+height:300px;
+width:100%;
+bottom:0;
+}
+
+.left{
+border-top:2px solid red;
+border-bottom:2px solid red;
+position:absolute;
+top:60px;
+left:160px;
+}
+.right{
+border-top:2px solid chocolate;
+border-bottom:2px solid chocolate;
+position:absolute;
+top:60px;
+right:180px;
+}
+.center{
+position:absolute;
+top:40px;
+left:34%;
+}
+@keyframes but{
+0%{opacity:0}
+50%{opacity:1}
+100%{opacity:1}
+}
+
+#but1{
+animation-name:but;
+animation-duration:2s;
+}
+#but2{
+animation-name:but;
+animation-duration:6s;
+}
+#but3{
+animation-name:but;
+animation-duration:6s;
+}
+#but4{
+animation-name:but;
+animation-duration:8s;
+}
+
+#divform{
+opacity:0.7;
+}
+#divform:hover{
+border-top:2px solid black;
+border-bottom:2px solid black;
+opacity:1;
+}
+label{
+font-weight:bold
+}
+input[type=text]{
+width:100%;
+padding:12px 20px;
+margin:8px 0;
+display:inline-block;
+border-radius:4px;
+box-sizing:border-box
+}
+input[type=submit]{
+background-color:chocolate;
+width:100%;
+color:ghostwhite;
+padding:10px 15px;
+margin:8px 0;
+border:none;
+cursor:pointer
+}
